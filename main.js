@@ -30,8 +30,27 @@ class item{
         box.appendChild(input);
         box.appendChild(editButton);
         box.appendChild(removeButton);
+
+        editButton.addEventListener('click', () => this.edits(input));
+        removeButton.addEventListener('click', () => this.remove(box));
+    }
+    
+
+    edits(input){
+        input.disabled = !(input.disabled);
+    }
+
+    remove(item){
+        container.removeChild(item);
+    }
+    
+}
+
+function check(){
+    if(input.value != ""){
+        new item(input.value);
+        input.value = "";
     }
 }
 
-new item("sport");
-new item("TV");
+add.addEventListener('click' , check);
