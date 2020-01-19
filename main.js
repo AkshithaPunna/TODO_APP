@@ -24,7 +24,7 @@ class item{
 
         let removeButton = document.createElement('button');
         removeButton.classList.add('remove');
-        editButton.innerHTML = '<i class="fas fa-edit"></i>';
+        removeButton.innerHTML = '<i class="fas fa-trash"></i>';
 
         container.appendChild(box);
         box.appendChild(input);
