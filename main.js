@@ -35,8 +35,7 @@ class item{
         removeButton.addEventListener('click', () => this.remove(box));
     }
     
-
-    edits(input){
+        edits(input){
         input.disabled = !(input.disabled);
     }
 

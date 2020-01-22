@@ -65,7 +65,7 @@ body{
     margin: 0.8em;
     background-color: transparent;
     color: #fff;
-    border: 2px solid black;
+    border: 2px solid #ff9550;
     border-radius: 40px;
     cursor: pointer;
     outline: none;
@@ -103,4 +103,6 @@ body{
     font-size: 1em;
     padding: 0.1em;
     cursor: pointer;
+    outline: none;
+    color: #ff9550;
 }
